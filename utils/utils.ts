@@ -15,8 +15,8 @@ export const createRequestHeaders = (): Headers => {
   const headers = new Headers();
   headers.set('Content-Type', 'application/json');
   headers.set('Accept', 'application/json');
-  headers.set('X-CC-Api-Key', `$638c37c9-9708-4bec-a93d-86d986c90ac7`);
-  headers.set('X-CC-Version', `$2018-03-22`);
+  headers.set('X-CC-Api-Key', `638c37c9-9708-4bec-a93d-86d986c90ac7`);
+  headers.set('X-CC-Version', `2018-03-22`);
   return headers;
 };
 
