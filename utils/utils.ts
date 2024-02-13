@@ -1,24 +1,25 @@
 import { ChargeRequestBody } from '../types/commerceTypes';
 import { FrameRequest, getFrameAccountAddress, getFrameMessage } from '@coinbase/onchainkit';
 import { NextRequest } from 'next/server';
-export const NEXT_PUBLIC_URL = 'CHANGE ME';
+export const NEXT_PUBLIC_URL = 'https://testframefeb12.vercel.app';
 export const apiKey = process.env.API_KEY;
 export const apiVersion = process.env.API_VERSION;
 export const commerceApiUrl = 'https://api.commerce.coinbase.com/charges';
-export const PRODUCT_PRICE_USD = 'CHANGE ME';
-export const ITEM_DESCRIPTION = 'YOUR PRODUCT DESCRIPTION';
-export const ITEM_TITLE = 'CHANGE ME';
+export const PRODUCT_PRICE_USD = '1.00';
+export const ITEM_DESCRIPTION = 'justin test';
+export const ITEM_TITLE = 'super test';
 export const REDIRECT_URL = ''; //optional
-export const IMAGE_NAME = 'CHANGE ME';
+export const IMAGE_NAME = 'onchain.png';
 
 export const createRequestHeaders = (): Headers => {
   const headers = new Headers();
   headers.set('Content-Type', 'application/json');
   headers.set('Accept', 'application/json');
-  headers.set('X-CC-Api-Key', `${apiKey}`);
-  headers.set('X-CC-Version', `${apiVersion}`);
+  headers.set('X-CC-Api-Key', `$638c37c9-9708-4bec-a93d-86d986c90ac7`);
+  headers.set('X-CC-Version', `$2018-03-22`);
   return headers;
 };
+
 
 const requestHeaders = createRequestHeaders();
 export async function createCharge(chargeData: ChargeRequestBody): Promise<any> {
