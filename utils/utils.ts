@@ -5,7 +5,7 @@ export const NEXT_PUBLIC_URL = 'https://testframefeb12.vercel.app';
 export const apiKey = process.env.API_KEY;
 export const apiVersion = process.env.API_VERSION;
 export const commerceApiUrl = 'https://api.commerce.coinbase.com/charges';
-export const PRODUCT_PRICE_USD = '1';
+export const PRODUCT_PRICE_USD = '1.00';
 export const ITEM_DESCRIPTION = 'justin test';
 export const ITEM_TITLE = 'super test';
 export const REDIRECT_URL = ''; //optional
@@ -15,8 +15,8 @@ export const createRequestHeaders = (): Headers => {
   const headers = new Headers();
   headers.set('Content-Type', 'application/json');
   headers.set('Accept', 'application/json');
-  headers.set('X-CC-Api-Key', `${apiKey}`);
-  headers.set('X-CC-Version', `${apiVersion}`);
+  headers.set('X-CC-Api-Key', `$638c37c9-9708-4bec-a93d-86d986c90ac7`);
+  headers.set('X-CC-Version', `$2018-03-22`);
   return headers;
 };
 
